@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import contentFeatured from '../public/content_featured.jpg'
+import Navbar from '../components/navbar.js'
 
 // <div className="headerLeft flex-[1_1_50%] items-baseline"></div>
 // <h1 className="headerTitle text-base md:text-lg relative z-[3] text-center flex-[0_0_auto] select-none">Gabriella Furno</h1>
@@ -15,23 +16,8 @@ const Home = () => {
         <title>Gabriella Furno</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="header fixed h-11 md:h-24 px-2.5 md:px-8 top-0 left-0 w-full z-10 flex items-center">
-        <div className="headerContainer flex leading-5 w-full items-baseline justify-between">
-          <div className="headerLeft flex flex-[1_1_50%] items-baseline">
-            <button className="navButton flex relative justify-start items-start z-10 p-2.5 -mt-2.5 -ml-2.5 md:m-0" aria-label="Open navigation">
-              <div className="navIconWrap block">
-                <div className="navIcon w-5 md:w-6 h-3.5 md:h-4 relative block">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </button>
-          </div>
-          <h1 className="headerTitle flex-[0_0_auto] text-base md:text-lg relative z-[3] text-center select-none">Gabriella Furno</h1>
-          <div className="headerRight flex-[1_1_50%] items-baseline justify-end">&nbsp;</div>
-        </div>
-      </header>
+      <Navbar/>
+      
 
       <main className="flex-[1_0_auto] px-2.5 md:px-8">
         <div className="leadImageContainer">
