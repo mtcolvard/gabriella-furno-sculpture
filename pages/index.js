@@ -6,33 +6,52 @@ import Navbar from '../components/navbar.js'
 
 // <div className="headerLeft flex-[1_1_50%] items-baseline"></div>
 // <h1 className="headerTitle text-base md:text-lg relative z-[3] text-center flex-[0_0_auto] select-none">Gabriella Furno</h1>
+// <div className="flex min-h-screen flex-col items-center justify-center py-24">
 
 
 // const Home: NextPage = () => {
 const Home = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-24">
+    <div>
       <Head>
         <title>Gabriella Furno</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      
+
 
       <main className="flex-[1_0_auto] px-2.5 md:px-8">
         <div className="leadImageContainer">
         </div>
-        <div className="content block">
-          <div className="featured mb-16">
-            <Image
-              src={contentFeatured}
-              alt="The Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
-            />
-            <div className="homepageContentCaption mt-4 md:m-0 md:pt-5">
-              <div>
-                <span className="headerTitle">
-                  <h2>The Sacrifice, Gabriella Furno, Palermo, Italy</h2>
-                </span>
+        <div className="content">
+          <div className="content block">
+            <div className="featured mb-16">
+              <Image
+                src={contentFeatured}
+                alt="The Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
+                priority
+              />
+              <div className="homepageContentCaption mt-4 md:m-0 md:pt-5">
+                <div>
+                  <span className="headerTitle">
+                    <h2>The Sacrifice, Gabriella Furno, Palermo, Italy</h2>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content block">
+            <div className="featured mb-16">
+              <Image
+                src={contentFeatured}
+                alt="The Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
+              />
+              <div className="homepageContentCaption mt-4 md:m-0 md:pt-5">
+                <div>
+                  <span className="headerTitle">
+                    <h2>The Sacrifice, Gabriella Furno, Palermo, Italy</h2>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
