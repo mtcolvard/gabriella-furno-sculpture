@@ -1,6 +1,7 @@
 // import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import contentFeatured from '../public/content_featured.jpg'
 import infinityBackThreeQuarters from '../public/infinity/infinity_back_three_quarters.jpg'
 import pandoraBackThreeQuarters from '../public/pandora/pandora_back_three_quarters.jpg'
@@ -29,11 +30,13 @@ const Home = () => {
           <div className="content">
             <div className="content block">
               <div className="featured mb-8 md:mb-16">
-                <Image
-                  src={contentFeatured}
-                  alt="Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
-                  priority
-                />
+                <Link href="/works/sacrifice">
+                  <Image
+                    src={contentFeatured}
+                    alt="Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
+                    priority
+                  />
+                </Link>
                 <div className="homepageContentCaption text-base md:text-2xl mt-4 md:m-0 md:pt-5">
                   <div>
                     <span className="headerTitle">
@@ -47,10 +50,12 @@ const Home = () => {
             </div>
             <div className="content block">
               <div className="mb-16">
-                <Image
-                  src={infinityBackThreeQuarters}
-                  alt="Infinity: a 218 cm tall aluminium sculpture of a Nigerian man crouching with hands outstretched"
-                />
+                <Link href="/works/infinity">
+                  <Image
+                    src={infinityBackThreeQuarters}
+                    alt="Infinity: a 218 cm tall aluminium sculpture of a Nigerian man crouching with hands outstretched"
+                  />
+                </Link>
                 <div className="homepageContentCaption text-base md:text-2xl mt-4 md:m-0 md:pt-5">
                   <div>
                     <span className="headerTitle">
@@ -64,10 +69,12 @@ const Home = () => {
             </div>
             <div className="content block">
               <div className="mb-16">
-                <Image
-                  src={pandoraBackThreeQuarters}
-                  alt="Pandora: a 230 cm tall cast aluminium sculpture of a beautiful African woman, contrapposto with hands framing her head"
-                />
+                <Link href="/works/pandora">
+                  <Image
+                    src={pandoraBackThreeQuarters}
+                    alt="Pandora: a 230 cm tall cast aluminium sculpture of a beautiful African woman, contrapposto with hands framing her head"
+                  />
+                </Link>
                 <div className="homepageContentCaption text-base md:text-2xl mt-4 md:m-0 md:pt-5">
                   <h2><span className="italic">Pandora, </span>
                     2013, Palermo, Italy, Cast Aluminum, 123 x 230 cm
@@ -78,10 +85,12 @@ const Home = () => {
             </div>
             <div className="content block">
               <div className="mb-16">
-                <Image
-                  src={classicalAlabasterBust}
-                  alt="tk"
-                />
+                <Link href="/works/palazzo-installation">
+                  <Image
+                    src={classicalAlabasterBust}
+                    alt="tk"
+                  />
+                </Link>
                 <div className="homepageContentCaption text-base md:text-2xl mt-4 md:m-0 md:pt-5">
                   <div>
                     <span className="headerTitle">

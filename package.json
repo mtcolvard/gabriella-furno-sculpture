@@ -12,7 +12,8 @@
     "@next/font": "^13.1.2",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.0.7",
