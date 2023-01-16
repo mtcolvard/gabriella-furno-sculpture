@@ -2,6 +2,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import contentFeatured from '../public/content_featured.jpg'
+import infinityBackThreeQuarters from '../public/infinity/infinity_back_three_quarters.jpg'
+import pandoraBackThreeQuarters from '../public/pandora/pandora_back_three_quarters.jpg'
 import Navbar from '../components/navbar.js'
 
 // <div className="headerLeft flex-[1_1_50%] items-baseline"></div>
@@ -28,28 +30,43 @@ const Home = () => {
             <div className="featured mb-16">
               <Image
                 src={contentFeatured}
-                alt="The Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
+                alt="Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
                 priority
               />
               <div className="homepageContentCaption mt-4 md:m-0 md:pt-5">
                 <div>
                   <span className="headerTitle">
-                    <h2>The Sacrifice, Gabriella Furno, Palermo, Italy</h2>
+                    <h2>Sacrifice, 2013, Palermo, Italy, Cast Aluminum, 186x186cm</h2>
                   </span>
                 </div>
               </div>
             </div>
           </div>
           <div className="content block">
-            <div className="featured mb-16">
+            <div className="mb-16">
               <Image
-                src={contentFeatured}
-                alt="The Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
+                src={infinityBackThreeQuarters}
+                alt="Infinity: a 218 cm tall aluminium sculpture of a Nigerian man crouching with hands outstretched"
               />
               <div className="homepageContentCaption mt-4 md:m-0 md:pt-5">
                 <div>
                   <span className="headerTitle">
-                    <h2>The Sacrifice, Gabriella Furno, Palermo, Italy</h2>
+                    <h2>Infinity, 2014, Palermo, Italy, Cast Aluminum, 218x200cm</h2>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content block">
+            <div className="mb-16">
+              <Image
+                src={pandoraBackThreeQuarters}
+                alt="Pandora: a 230 cm tall cast aluminium sculpture of a beautiful African woman, contrapposto with hands framing her head"
+              />
+              <div className="homepageContentCaption mt-4 md:m-0 md:pt-5">
+                <div>
+                  <span className="headerTitle">
+                    <h2>Pandora, 2013, Palermo, Italy, Cast Aluminum, 123x230cm</h2>
                   </span>
                 </div>
               </div>
