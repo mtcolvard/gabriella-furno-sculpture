@@ -60,7 +60,7 @@ const Navbar = () => {
               </div>
             </button>
           </div>
-          <h1 className="headerTitle flex-[0_0_auto] text-base md:text-lg relative z-[3] text-center select-none">Gabriella Furno</h1>
+          <h1 className="headerTitle flex-[0_0_auto] --font-cormorant text-3xl md:text-5xl relative z-[3] text-center select-none">Gabriella Furno</h1>
           <div className="headerRight flex-[1_1_50%] items-baseline justify-end">&nbsp;</div>
         </div>
       </header>
