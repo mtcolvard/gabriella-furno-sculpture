@@ -3,10 +3,10 @@ import Image from 'next/image'
 import {Carousel} from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-import infinityBackThreeQuarters from '../../public/infinity/infinity_back_three_quarters.jpg'
-import pandoraBackThreeQuarters from '../../public/pandora/pandora_back_three_quarters.jpg'
-import classicalAlabasterBust from '../../public/classical/classical_alabaster_bust.jpg'
-import classicalWomanAndMan from '../../public/classical/classical_woman_and_man.jpg'
+import infinityBackThreeQuarters from '../../../public/infinity/infinity_back_three_quarters.jpg'
+import pandoraBackThreeQuarters from '../../../public/pandora/pandora_back_three_quarters.jpg'
+import classicalAlabasterBust from '../../../public/classical/classical_alabaster_bust.jpg'
+import classicalWomanAndMan from '../../../public/classical/classical_woman_and_man.jpg'
 
 const images = [infinityBackThreeQuarters, pandoraBackThreeQuarters, classicalAlabasterBust, classicalWomanAndMan]
 

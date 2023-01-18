@@ -22,15 +22,16 @@ const Home = () => {
         <title>Gabriella Furno</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+    <div className="site min-h-screen flex flex-col pt-12 md:pt-24">
       <Navbar/>
 
 
       <main className="flex-[1_0_auto] px-2.5 md:px-8 text-xl md:text-3xl">
-        <div className="leadImageContainer mt-16 md:mt-24"></div>
+        <div className="leadImageContainer"></div>
           <div className="content">
             <div className="content block">
               <div className="featured mb-8 md:mb-16">
-                <Link href="/works/sacrifice">
+                <Link href="/works/sculpture/sacrifice">
                   <Image
                     src={contentFeatured}
                     alt="Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
@@ -50,7 +51,7 @@ const Home = () => {
             </div>
             <div className="content block">
               <div className="mb-16">
-                <Link href="/works/infinity">
+                <Link href="/works/sculpture/infinity">
                   <Image
                     src={infinityBackThreeQuarters}
                     alt="Infinity: a 218 cm tall aluminium sculpture of a Nigerian man crouching with hands outstretched"
@@ -69,7 +70,7 @@ const Home = () => {
             </div>
             <div className="content block">
               <div className="mb-16">
-                <Link href="/works/pandora">
+                <Link href="/works/sculpture/pandora">
                   <Image
                     src={pandoraBackThreeQuarters}
                     alt="Pandora: a 230 cm tall cast aluminium sculpture of a beautiful African woman, contrapposto with hands framing her head"
@@ -85,7 +86,7 @@ const Home = () => {
             </div>
             <div className="content block">
               <div className="mb-16">
-                <Link href="/works/palazzo-installation">
+                <Link href="/works/sculpture/palazzo-installation">
                   <Image
                     src={classicalAlabasterBust}
                     alt="tk"
@@ -114,6 +115,7 @@ const Home = () => {
           </a>
         </footer>
       </div>
+    </div>
     )
   }
 
