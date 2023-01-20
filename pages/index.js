@@ -14,7 +14,50 @@ import Navbar from '../components/navbar.js'
 // <div className="flex min-h-screen flex-col items-center justify-center py-24">
 
 
-// const Home: NextPage = () => {
+// <button className="navButton flex relative justify-start items-start z-10 p-2.5 -mt-2.5 -ml-2.5 md:m-0" aria-label="Open navigation">
+// <div className="navIcon w-5 md:w-6 h-3.5 md:h-4 relative block">
+// <FontAwesomeIcon icon={faBars} size={`${burgerSize}`} />
+
+// --font-family-serif: "Starling","Times New Roman",serif;
+//   --color-grey: #a6a6a6;
+//   --color-grey-light: #eee;
+//   --gutter: 30px;
+//   --margin-x-small: 20px;
+//   --margin-small: 40px;
+//   --margin-mid: 60px;
+//   --margin-large: 80px;
+//   --margin-x-large: 120px;
+//   --margin-xx-large: 210px;
+//   --sm-gutter: 10px;
+//   --sm-margin-x-small: 15px;
+//   --sm-margin-small: 20px;
+//   --sm-margin-mid: 30px;
+//   --sm-margin-large: 70px;
+//   --sm-margin-x-large: 150px;
+//   --sm-font-size-large: 19px;
+//   --sm-font-size-body: 14px;
+//   --sm-font-size-caption: 12px;
+
+//   --md-font-size-large: 19px;
+//   --md-font-size-body: 15px;
+//   --md-font-size-caption: 12px;
+
+//   --lg-font-size-large: 22px;
+//   --lg-font-size-body: 18px;
+//   --lg-font-size-caption: 15px;
+
+//   --font-size-large: 19px;
+//   --font-size-body: 15px;
+//   --font-size-caption: 12px;
+
+//   --line-height-body: 1.4;
+//   --header-height: 90px;
+//   --sm-header-height: 45px;
+
+//   --square-frame: calc((100vw - (var(--gutter) * 2) - var(--margin-large)) / 2);
+//   --page-width: 36.8em;
+//   --wide-page-width: 44.6666666em;
+
 const Home = () => {
   return (
     <div>
@@ -24,8 +67,6 @@ const Home = () => {
       </Head>
     <div className="site min-h-screen flex flex-col pt-12 md:pt-24">
       <Navbar/>
-
-
       <main className="flex-[1_0_auto] px-2.5 md:px-8 text-xl md:text-3xl">
         <div className="leadImageContainer"></div>
           <div className="content">

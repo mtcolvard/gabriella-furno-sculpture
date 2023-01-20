@@ -2,19 +2,15 @@ import { useState, useEffect } from 'react'
 import {debounce} from '../utilities/debounce.js'
 import Image from 'next/image'
 import Link from 'next/link'
-
-
-
-import burgerMenu from '../public/menuIcon50px.png'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 
 const Navbar = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
+  const [navActive, setNavActive] =useState(false)
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
@@ -33,17 +29,6 @@ const Navbar = () => {
   const navbarStyles = {
     transition: 'top 0.6s'
   }
-
-  useEffect(() => {
-    mediaSize = Window.innerWidth
-  })
-  let mediaSize = 100
-  const burgerSize = mediaSize > 500 ? '2xl' : 'xl'
-  console.log(mediaSize)
-
-  // <button className="navButton flex relative justify-start items-start z-10 p-2.5 -mt-2.5 -ml-2.5 md:m-0" aria-label="Open navigation">
-  // <div className="navIcon w-5 md:w-6 h-3.5 md:h-4 relative block">
-  // <FontAwesomeIcon icon={faBars} size={`${burgerSize}`} />
 
   // --font-family-serif: "Starling","Times New Roman",serif;
   //   --color-grey: #a6a6a6;
@@ -85,24 +70,23 @@ const Navbar = () => {
   //   --page-width: 36.8em;
   //   --wide-page-width: 44.6666666em;
 
+
   return (
-      <header className="header flex fixed top-0 left-0 w-full z-10 h-12 px-2.5 md:h-24 md:px-8 items-center bg-white" style={{ ...navbarStyles, top: visible ? '0' : '-96px' }}>
-        <div className="headerContainer  flex leading-5 w-full items-baseline justify-between">
-          <div className="headerLeft flex flex-[1_1_50%] items-baseline">
-            <button className="navButton flex relative justify-start items-start z-10 p-2.5 -mt-2.5 -ml-2.5 " aria-label="Open navigation">
+      <header className="header flex fixed top-0 left-0 w-full z-100 h-12 md:h-24 px-2.5  md:px-8 items-center bg-white" style={{ ...navbarStyles, top: visible ? '0' : '-96px' }}>
+        <div className="headerContainer flex leading-5 w-full items-baseline justify-between">
+          <div className="headerLeft flex grow shrink basis-1/2 items-baseline">
+            <button className="navButton flex relative justify-start items-start z-100 p-2.5 -mt-2.5 -ml-2.5 "
+              aria-label="Open navigation"
+            >
               <div className="navIconWrap block">
                 <div className="navIcon w-5 md:w-6 h-3.5 md:h-4 relative block">
-                  <Image
-                    src={burgerMenu}
-                    alt='navigation menu'
-                    />
                   <span></span>
                   <span></span>
                   <span></span>
                 </div>
               </div>
             </button>
-            <nav className="headerNav absolute block h-12 left-0 w-full bg-white top-11 px-2.5 md:pl-12 text-lg leading-7">
+            <nav className="headerNav navLeft opacity-100 top-12 px-2.5 absolute left-0 w-full bg-white leading-tight block text-xl  ">
               <ul className="navLevelOne">
                 <li>
                   <Link href="works/sculpture/overview">Works</Link>
@@ -116,8 +100,8 @@ const Navbar = () => {
               </ul>
             </nav>
           </div>
-          <h1 className="headerTitle flex-[0_0_auto] --font-cormorant text-xl md:text-5xl relative z-[3] text-center select-none">Gabriella Furno</h1>
-          <div className="headerRight flex-[1_1_50%] items-baseline justify-end">&nbsp;</div>
+          <h1 className="headerTitle grow-0 shrink-0 basis-auto leading-none relative z-30 --font-cormorant text-xl md:text-2xl text-center select-none">Gabriella Furno</h1>
+          <div className="headerRight flex grow shrink basis-1/2 items-baseline justify-end">&nbsp;</div>
         </div>
       </header>
   );
