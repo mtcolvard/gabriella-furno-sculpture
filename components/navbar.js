@@ -10,7 +10,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
-  const [navActive, setNavActive] =useState(false)
+  const [navActive, setNavActive] = useState(false)
+  const [worksActive, setWorksActive] = useState(false)
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
@@ -22,7 +23,6 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
@@ -70,37 +70,63 @@ const Navbar = () => {
   //   --page-width: 36.8em;
   //   --wide-page-width: 44.6666666em;
 
+  // <header className="header flex fixed top-0 left-0 w-full z-100 h-12 md:h-24 px-2.5  md:px-8 items-center bg-white" style={{ ...navbarStyles, top: visible ? '0' : '-96px' }}>
+
 
   return (
-      <header className="header flex fixed top-0 left-0 w-full z-100 h-12 md:h-24 px-2.5  md:px-8 items-center bg-white" style={{ ...navbarStyles, top: visible ? '0' : '-96px' }}>
+      <header className="header flex fixed top-0 left-0 w-full z-100 h-12 md:h-24 px-2.5 md:px-8 items-center bg-white" style={{ ...navbarStyles, top: visible ? '0' : '-96px' }}>
         <div className="headerContainer flex leading-5 w-full items-baseline justify-between">
           <div className="headerLeft flex grow shrink basis-1/2 items-baseline">
-            <button className="navButton flex relative justify-start items-start z-100 p-2.5 -mt-2.5 -ml-2.5 "
+            <button
+              className="navButton flex relative justify-start items-start z-100 p-2.5 -mt-2.5 -ml-2.5 "
               aria-label="Open navigation"
+              onClick={() => {setNavActive(!navActive); setWorksActive(false)} }
             >
               <div className="navIconWrap block">
-                <div className="navIcon w-5 md:w-6 h-3.5 md:h-4 relative block">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                {navActive ?
+                  <div className="navIcon navIconX w-5 md:w-6 h-3.5 md:h-4 relative block">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div> :
+                  <div className="navIcon navIconHamburger w-5 md:w-6 h-3.5 md:h-4 relative block">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                }
               </div>
             </button>
-            <nav className="headerNav navLeft opacity-100 top-12 px-2.5 absolute left-0 w-full bg-white leading-tight block text-xl  ">
+            { navActive &&
+            <nav className="headerNav navLeft opacity-100 top-12 px-2.5 md:mt-6 absolute left-0 w-full bg-white leading-tight block text-xl  ">
               <ul className="navLevelOne">
                 <li>
-                  <Link href="works/sculpture/overview">Works</Link>
+                  <button onClick={() => {setWorksActive(!worksActive)}}
+                  >Works</button>
+                    {worksActive &&
+                      <ul className="navLevelTwo ml-7">
+                        <li>
+                        <Link href="/works/exhibitions">Exhibitions</Link>
+                        </li>
+                        <li>
+                        <Link href="/works/sculptures">Sculpture</Link>
+                        </li>
+                      </ul>
+                    }
                 </li>
                 <li>
-                  <Link href="resources/profile">Profile</Link>
+                  <Link href="/profile">Profile</Link>
                 </li>
                 <li>
-                  <Link href="resources/contact">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </nav>
+          }
           </div>
-          <h1 className="headerTitle grow-0 shrink-0 basis-auto leading-none relative z-30 --font-cormorant text-xl md:text-2xl text-center select-none">Gabriella Furno</h1>
+          <div className="headerTitle grow-0 shrink-0 basis-auto leading-none relative z-30 --font-cormorant text-xl md:text-2xl text-center select-none">
+            <Link href="/">Gabriella Furno</Link>
+          </div>
           <div className="headerRight flex grow shrink basis-1/2 items-baseline justify-end">&nbsp;</div>
         </div>
       </header>
