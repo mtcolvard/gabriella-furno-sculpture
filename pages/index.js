@@ -66,7 +66,7 @@ const Home = () => {
         <title>Gabriella Furno</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="site min-h-screen flex flex-col pt-12 md:pt-24">
+      <div className="site min-h-screen flex flex-col pt-12 md:pt-24 text-zinc-500">
         <Navbar/>
         <main className="flex-[1_0_auto] px-2.5 md:px-8 text-xl md:text-3xl">
           <div className="leadImageContainer"></div>
