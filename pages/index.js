@@ -2,22 +2,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import contentFeatured from '../public/content_featured.jpg'
+import sacrifice_main_torso_three_quarters from '../public/sculpture/sacrifice/sacrifice_main_torso_three_quarters.jpg'
 import infinityBackThreeQuarters from '../public/sculpture/infinity/infinity_back_three_quarters.jpg'
 import pandoraBackThreeQuarters from '../public/sculpture/pandora/pandora_back_three_quarters.jpg'
 import classicalAlabasterBust from '../public/sculpture/classical/classical_alabaster_bust.jpg'
 import classicalWomanAndMan from '../public/sculpture/classical/classical_woman_and_man.jpg'
 import Navbar from '../components/navbar.js'
 import Footer from '../components/footer.js'
-
-// <div className="headerLeft flex-[1_1_50%] items-baseline"></div>
-// <h1 className="headerTitle text-base md:text-lg relative z-[3] text-center flex-[0_0_auto] select-none">Gabriella Furno</h1>
-// <div className="flex min-h-screen flex-col items-center justify-center py-24">
-
-
-// <button className="navButton flex relative justify-start items-start z-10 p-2.5 -mt-2.5 -ml-2.5 md:m-0" aria-label="Open navigation">
-// <div className="navIcon w-5 md:w-6 h-3.5 md:h-4 relative block">
-// <FontAwesomeIcon icon={faBars} size={`${burgerSize}`} />
+import ImageArray from '../components/images-array.js'
 
 // --font-family-serif: "Starling","Times New Roman",serif;
 //   --color-grey: #a6a6a6;
@@ -60,96 +52,63 @@ import Footer from '../components/footer.js'
 //   --wide-page-width: 44.6666666em;
 
 const Home = () => {
+  const imageObject = [
+    {
+      link:"/works/sculpture/sacrifice",
+      src:sacrifice_main_torso_three_quarters,
+      alt:"Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched",
+      title: 'Sacrifice, ',
+      details: '2013, Palermo,',
+      material: 'Cast Aluminum,',
+      size: '186 x 186 cm'
+    },
+    {
+      link:"/works/sculpture/infinity",
+      src:infinityBackThreeQuarters,
+      alt:"Infinity: a 218 cm tall aluminium sculpture of a Nigerian man crouching with hands outstretched",
+      title: 'Infinity, ',
+      details: '2014, Palermo,',
+      material: 'Cast Aluminum,',
+      size: '218 x 200 cm'
+    },
+    {
+      link:"/works/sculpture/pandora",
+      src:pandoraBackThreeQuarters,
+      alt:"Pandora: a 230 cm tall cast aluminium sculpture of a beautiful African woman, contrapposto with hands framing her head",
+      title: 'Pandora, ',
+      details: '2013, Palermo,',
+      material: 'Cast Aluminum,',
+      size: '123 x 230 cm'
+    },
+    {
+      link:'/works/sculpture/palazzo-installation',
+      src:classicalAlabasterBust,
+      alt: 'tk',
+      title: 'Woman, ',
+      details: '2013, Palermo,',
+      material: 'Plaster,',
+      size: '40 x 40 cm'
+    }
+
+  ]
+
   return (
     <div>
       <Head>
         <title>Gabriella Furno</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="site min-h-screen flex flex-col pt-12 md:pt-24 text-zinc-500">
+      <div className="site min-h-screen flex flex-col pt-12 md:pt-24 ">
         <Navbar/>
         <main className="flex-[1_0_auto] px-2.5 md:px-8 text-xl md:text-3xl">
-          <div className="leadImageContainer"></div>
-            <div className="content md:px-44">
-              <div className="content block">
-                <div className="featured mb-8 md:mb-16">
-                  <Link href="/works/sculpture/sacrifice">
-                    <Image
-
-                      src={contentFeatured}
-                      alt="Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched"
-                      priority
-                    />
-                  </Link>
-                  <div className="homepageContentCaption text-base mt-4 md:m-0 md:pt-5">
-                    <div>
-                      <span className="headerTitle">
-                        <h2><span className="italic">Sacrifice, </span>2013, Palermo, Cast Aluminum</h2>
-                        <h2>186 x 186 cm</h2>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content block">
-                <div className="mb-16">
-                  <Link href="/works/sculpture/infinity">
-                    <Image
-
-                      src={infinityBackThreeQuarters}
-                      alt="Infinity: a 218 cm tall aluminium sculpture of a Nigerian man crouching with hands outstretched"
-                    />
-                  </Link>
-                  <div className="homepageContentCaption text-base mt-4 md:m-0 md:pt-5">
-                    <div>
-                      <span className="headerTitle">
-                        <h2><span className="italic">Infinity, </span>
-                          2014, Palermo, Cast Aluminum
-                        </h2>
-                        <h2>218 x 200 cm</h2>
-
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content block">
-                <div className="mb-16">
-                  <Link href="/works/sculpture/pandora">
-                    <Image
-
-                      src={pandoraBackThreeQuarters}
-                      alt="Pandora: a 230 cm tall cast aluminium sculpture of a beautiful African woman, contrapposto with hands framing her head"
-                    />
-                  </Link>
-                  <div className="homepageContentCaption text-base mt-4 md:m-0 md:pt-5">
-                    <h2><span className="italic">Pandora, </span>
-                      2013, Palermo, Cast Aluminum
-                    </h2>
-                    <h2>123 x 230 cm</h2>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content block">
-                <div className="mb-16">
-                  <Link href="/works/sculpture/palazzo-installation">
-                    <Image
-
-                      src={classicalAlabasterBust}
-                      alt="tk"
-                    />
-                  </Link>
-                  <div className="homepageContentCaption text-base mt-4 md:m-0 md:pt-5">
-                    <div>
-                      <span className="headerTitle">
-                        <h2><span className="italic">Woman, </span>
-                        2013, Palermo, Plaster</h2>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="leadImageContainer">
+            <div className="featured md:px-52">
+              <ImageArray imageObject={imageObject.slice(0,1)}/>
+            </div>
+          </div>
+            <div className="content md:px-52">
+              <ImageArray imageObject={imageObject.slice(1)}/>
+            </div>
         <Footer />
         </main>
       </div>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html * {
+  color: rgb(113 113 122);
+}
+
 .navIcon span {
     display: block;
     width: 100%;
@@ -10,7 +14,7 @@
     top: 50%;
     left: 50%;
     transition: all .35s;
-    background-color: #000;
+    background-color: rgb(113 113 122);
 }
 
 .navIconHamburger span:first-child {
@@ -67,7 +71,16 @@
   }
 }
 
+
 .carousel .slide img {
     max-width: 756px;  /* change this to whatever you want */
     height: auto;
+}
+
+
+@media (min-width: 1024px) {
+  .thumbs-wrapper {
+  display: flex;
+  justify-content: center;
+  }
 }
