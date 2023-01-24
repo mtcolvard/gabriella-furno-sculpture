@@ -90,17 +90,6 @@ const Home = () => {
       width: '100%'
     },
     {
-      link:'/works/exhibitions/palazzo-installation',
-      src:classicalAlabasterBust,
-      alt: 'tk',
-      title: 'Woman, ',
-      details: '2013, Palermo,',
-      material: 'Plaster,',
-      size: '40  x 40 cm',
-      style: 'regular',
-      width: '100%'
-    },
-    {
       link:"/works/sculpture/metamorphose",
       src:metamorphose_three_quarters,
       alt:"Metamorphose: a 36 cm tall sparklely green gray black resin sculpture of the head of a Nigerian man",
@@ -110,6 +99,17 @@ const Home = () => {
       size: '36 x 156 cm',
       style: 'skinny',
       width: '50%'
+    },
+    {
+      link:'/works/exhibitions/palazzo-installation',
+      src:classicalAlabasterBust,
+      alt: 'tk',
+      title: 'Woman, ',
+      details: '2013, Palermo,',
+      material: 'Plaster,',
+      size: '40  x 40 cm',
+      style: 'regular',
+      width: '100%'
     }
 
   ]
