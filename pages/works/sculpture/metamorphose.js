@@ -3,26 +3,24 @@ import Image from 'next/image'
 import Navbar from '../../../components/navbar.js'
 import CarouselComponent from '../../../components/carousel-component.js'
 
-import sacrifice_back_torso from '../../../public/sculpture/sacrifice/sacrifice_back_torso.jpg'
-import sacrifice_back from '../../../public/sculpture/sacrifice/sacrifice_back.jpg'
-import sacrifice_full_three_quarters from '../../../public/sculpture/sacrifice/sacrifice_full_three_quarters.jpg'
-import sacrifice_full from '../../../public/sculpture/sacrifice/sacrifice_full.jpg'
-import sacrifice_main_torso_three_quarters from '../../../public/sculpture/sacrifice/sacrifice_main_torso_three_quarters.jpg'
-import sacrifice_torso from '../../../public/sculpture/sacrifice/sacrifice_torso.jpg'
+import metamorphose_right from '../../../public/sculpture/metamorphose/metamorphose_right.jpg'
+import metamorphose_three_quarters from '../../../public/sculpture/metamorphose/metamorphose_three_quarters.jpg'
 
-const imagesArray = [sacrifice_back, sacrifice_full_three_quarters, sacrifice_full, sacrifice_main_torso_three_quarters, sacrifice_torso, sacrifice_back_torso]
+const imagesArray = [metamorphose_three_quarters, metamorphose_right]
 
 const sculptureDetails = [{
-  link:"/works/sculpture/sacrifice",
-  src:sacrifice_main_torso_three_quarters,
-  alt:"Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched",
-  title: 'Sacrifice,',
-  details: '2013, Palermo,',
-  material: 'Cast Aluminum,',
-  size: '186 x 186 cm'
-}]
+  link:"/works/sculpture/metamorphose",
+  src:metamorphose_three_quarters,
+  alt:"Metamorphose: a 36 cm tall sparklely green gray black resin sculpture of the head of a Nigerian man",
+  title: 'Metamorphose, ',
+  details: '2017, Palermo,',
+  material: 'Cast Resin,',
+  size: '36 x 36 cm'
+}
 
-export default function Sacrifice() {
+]
+
+export default function Metamorphose() {
   return (
     <>
       <Navbar/>

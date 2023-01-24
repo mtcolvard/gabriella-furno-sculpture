@@ -2,14 +2,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '../components/navbar.js'
+import Footer from '../components/footer.js'
+import ImageArray from '../components/images-array.js'
+
 import sacrifice_main_torso_three_quarters from '../public/sculpture/sacrifice/sacrifice_main_torso_three_quarters.jpg'
 import infinityBackThreeQuarters from '../public/sculpture/infinity/infinity_back_three_quarters.jpg'
 import pandoraBackThreeQuarters from '../public/sculpture/pandora/pandora_back_three_quarters.jpg'
 import classicalAlabasterBust from '../public/sculpture/classical/classical_alabaster_bust.jpg'
 import classicalWomanAndMan from '../public/sculpture/classical/classical_woman_and_man.jpg'
-import Navbar from '../components/navbar.js'
-import Footer from '../components/footer.js'
-import ImageArray from '../components/images-array.js'
+import metamorphose_three_quarters from '../public/sculpture/metamorphose/metamorphose_three_quarters.jpg'
+
 
 // --font-family-serif: "Starling","Times New Roman",serif;
 //   --color-grey: #a6a6a6;
@@ -60,7 +63,9 @@ const Home = () => {
       title: 'Sacrifice, ',
       details: '2013, Palermo,',
       material: 'Cast Aluminum,',
-      size: '186 x 186 cm'
+      size: '186 x 186 cm',
+      style: 'regular',
+      width: '100%'
     },
     {
       link:"/works/sculpture/infinity",
@@ -69,7 +74,9 @@ const Home = () => {
       title: 'Infinity, ',
       details: '2014, Palermo,',
       material: 'Cast Aluminum,',
-      size: '218 x 200 cm'
+      size: '218 x 200 cm',
+      style: 'regular',
+      width: '100%'
     },
     {
       link:"/works/sculpture/pandora",
@@ -78,16 +85,31 @@ const Home = () => {
       title: 'Pandora, ',
       details: '2013, Palermo,',
       material: 'Cast Aluminum,',
-      size: '123 x 230 cm'
+      size: '123 x 230 cm',
+      style: 'regular',
+      width: '100%'
     },
     {
-      link:'/works/sculpture/palazzo-installation',
+      link:'/works/exhibitions/palazzo-installation',
       src:classicalAlabasterBust,
       alt: 'tk',
       title: 'Woman, ',
       details: '2013, Palermo,',
       material: 'Plaster,',
-      size: '40 x 40 cm'
+      size: '40  x 40 cm',
+      style: 'regular',
+      width: '100%'
+    },
+    {
+      link:"/works/sculpture/metamorphose",
+      src:metamorphose_three_quarters,
+      alt:"Metamorphose: a 36 cm tall sparklely green gray black resin sculpture of the head of a Nigerian man",
+      title: 'Metamorphose, ',
+      details: '2017, Palermo,',
+      material: 'Cast Resin,',
+      size: '36 x 156 cm',
+      style: 'skinny',
+      width: '50%'
     }
 
   ]

@@ -3,13 +3,20 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-const ImageArray = ( {imageObject }) => {
+const ExhibitionArray = ( { imageObject }) => {
 const regular = {maxWidth: '100%'}
 const medium = {display: 'block', width: '66%', marginLeft: 'auto', marginRight: 'auto'}
 const skinny = {display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto'}
 
   return(
     imageObject.map((image, i) =>
+    <div className="hidden md:block text-base  md:text-main mt-4 md:m-0 pt-12 md:pl-20 md:pb-10 md:pt-24">
+      <div className="flex flex-row flex-wrap space-x-2">
+        <div><span className="italic">{image.title}</span></div>
+        <div>{image.details}</div>
+        <div>{image.material}</div>
+        <div>{image.size}</div>
+      </div>
       <div className="content "
           key={i}
       >
@@ -61,27 +68,11 @@ const skinny = {display: 'block', width: '50%', marginLeft: 'auto', marginRight:
               style={skinny}
             />
           }
-
           </Link>
-          <div className="text-base mt-4 md:m-0 md:pt-4">
-            <div className="pictureCaptionMobile">
-              <div className="md:hidden">
-                <div><span className="italic">{image.title}</span>{image.details}</div>
-              </div>
-              <div className="md:hidden">
-                <div>{image.material} {image.size}</div>
-              </div>
-            </div>
-            <div className="pictureCapitionComputer">
-              <div className="hidden md:block ">
-                  <div><span className="italic">{image.title}</span>{image.details} {image.material}</div>
-              <div>{image.size}</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
+    </div>
     )
   )
 }
-  export default ImageArray;
+  export default ExhibitionArray;

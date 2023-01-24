@@ -31,8 +31,7 @@ export default function CarouselComponent({ imagesArray }) {
             src={img}
             alt={`${imagesArray.title} preview ${idx}`}
             layout="responsive"
-            width={650}
-            height={650}
+            width={'50%'}
             priority={idx === 0}
           ></Image>
         ))}

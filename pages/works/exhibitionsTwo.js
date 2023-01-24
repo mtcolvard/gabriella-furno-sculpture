@@ -1,3 +1,4 @@
+// import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -35,35 +36,22 @@ export default function Exhibitions() {
     }
   ]
 
-
   return (
-    <>
-      <Navbar/>
-      <main className="px-2.5 md:px-0">
-        <div className="hidden md:block text-base  md:text-main mt-4 md:m-0 pt-12 md:pl-20 md:pb-10 md:pt-24">
-          {imageObject.map(image =>
-            <div className="flex flex-row flex-wrap space-x-2">
-                <div><span className="italic">{image.title}</span></div>
-                <div>{image.details}</div>
-                <div>{image.material}</div>
-                <div>{image.size}</div>
+    <div>
+
+        <Navbar/>
+        <main className="flex-[1_0_auto] px-2.5 md:px-8 text-xl md:text-3xl">
+          <div className="leadImageContainer">
+            // <div className="featured md:px-52">
+            //   <ExhibitionArray imageObject={imageObject.slice(0,1)}/>
+            // </div>
+          </div>
+            <div className="content md:px-52">
+              <ExhibitionArray imageObject={imageObject.slice(1)}/>
             </div>
-          )}
-        </div>
-        <div className="featured md:px-52">
-          <ExhibitionArray imageObject={imageObject}/>
-        </div>
-        <div className="md:hidden text-base md:px-28 md:text-main mt-4 md:m-0 ">
-          {imageObject.map(image =>
-            <div className="flex flex-row flex-wrap space-x-2">
-                <div><span className="italic">{image.title}</span></div>
-                <div>{image.details}</div>
-                <div>{image.material}</div>
-                <div>{image.size}</div>
-            </div>
-          )}
-        </div>
-      </main>
-    </>
-  );
-}
+        <Footer />
+        </main>
+      </div>
+
+    )
+  }
