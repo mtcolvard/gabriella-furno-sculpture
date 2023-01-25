@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react'
 import {debounce} from '../utilities/debounce.js'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-
-
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
