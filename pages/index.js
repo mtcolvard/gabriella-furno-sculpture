@@ -11,7 +11,7 @@ import infinityBackThreeQuarters from '../public/sculpture/infinity/infinity_bac
 import pandoraBackThreeQuarters from '../public/sculpture/pandora/pandora_back_three_quarters.jpg'
 import classicalAlabasterBust from '../public/sculpture/classical/classical_alabaster_bust.jpg'
 import classicalWomanAndMan from '../public/sculpture/classical/classical_woman_and_man.jpg'
-import metamorphose_three_quarters from '../public/sculpture/metamorphose/metamorphose_three_quarters.jpg'
+// import metamorphose_three_quarters from '../public/sculpture/metamorphose/metamorphose_three_quarters.jpg'
 
 
 // --font-family-serif: "Starling","Times New Roman",serif;
@@ -89,17 +89,17 @@ const Home = () => {
       style: 'regular',
       width: '100%'
     },
-    {
-      link:"/works/sculpture/metamorphose",
-      src:metamorphose_three_quarters,
-      alt:"Metamorphose: a 36 cm tall sparklely green gray black resin sculpture of the head of a Nigerian man",
-      title: 'Metamorphose, ',
-      details: '2017, Palermo,',
-      material: 'Cast Resin,',
-      size: '36 x 156 cm',
-      style: 'skinny',
-      width: '50%'
-    },
+    // {
+    //   link:"/works/sculpture/metamorphose",
+    //   src:metamorphose_three_quarters,
+    //   alt:"Metamorphose: a 36 cm tall sparklely green gray black resin sculpture of the head of a Nigerian man",
+    //   title: 'Metamorphose, ',
+    //   details: '2017, Palermo,',
+    //   material: 'Cast Resin,',
+    //   size: '36 x 156 cm',
+    //   style: 'skinny',
+    //   width: '50%'
+    // },
     {
       link:'/works/exhibitions/palazzo-installation',
       src:classicalAlabasterBust,
