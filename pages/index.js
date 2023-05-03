@@ -9,8 +9,8 @@ import ImageArray from '../components/images-array.js'
 import sacrifice_main_torso_three_quarters from '../public/sculpture/sacrifice/sacrifice_main_torso_three_quarters.jpg'
 import infinityBackThreeQuarters from '../public/sculpture/infinity/infinity_back_three_quarters.jpg'
 import pandoraBackThreeQuarters from '../public/sculpture/pandora/pandora_back_three_quarters.jpg'
-import classicalAlabasterBust from '../public/sculpture/classical/classical_alabaster_bust.jpg'
 import classicalWomanAndMan from '../public/sculpture/classical/classical_woman_and_man.jpg'
+// import classicalAlabasterBust from '../public/sculpture/classical/classical_alabaster_bust.jpg'
 // import metamorphose_three_quarters from '../public/sculpture/metamorphose/metamorphose_three_quarters.jpg'
 
 
