@@ -101,9 +101,9 @@ const Navbar = () => {
                   >Works</button>
                     {worksActive &&
                       <ul className="navLevelTwo ml-7">
-                        <li>
+                        {/* <li>
                         <Link href="/works/exhibitions">Exhibitions</Link>
-                        </li>
+                        </li> */}
                         <li>
                         <Link href="/works/sculptures">Sculpture</Link>
                         </li>
