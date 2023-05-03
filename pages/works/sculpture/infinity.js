@@ -9,7 +9,7 @@ import infinity_back_torso from '../../../public/sculpture/infinity/infinity_bac
 import infinity_full from '../../../public/sculpture/infinity/infinity_full.jpg'
 import infinity_torso from '../../../public/sculpture/infinity/infinity_torso.jpg'
 
-const imagesArray = [infinity_back_full, infinity_back_three_quarters, infinity_back_torso, infinity_full, infinity_torso]
+const imagesToDisplay = [infinity_back_full, infinity_back_three_quarters, infinity_back_torso, infinity_full, infinity_torso]
 
 const sculptureDetails = [{
   link:"/works/sculpture/infinity",
@@ -40,7 +40,7 @@ export default function Infinity() {
         </div>
         <div className="pt-12 md:pt-0 md:px-8 md:mx-48">
           <CarouselComponent
-          imagesArray={imagesArray}
+          imagesToDisplay={imagesToDisplay}
           />
         </div>
         <div className="md:hidden text-base md:px-28 md:text-main mt-4 md:m-0 ">

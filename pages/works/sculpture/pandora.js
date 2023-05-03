@@ -12,7 +12,7 @@ import pandora_left_full from '../../../public/sculpture/pandora/pandora_left_fu
 import pandora_left_torso from '../../../public/sculpture/pandora/pandora_left_torso.jpg'
 import pandora_right from '../../../public/sculpture/pandora/pandora_right.jpg'
 
-const imagesArray = [pandora_right, pandora_back_torso, pandora_back_three_quarters, pandora_back, pandora_full_three_quarters, pandora_head, pandora_left_full, pandora_left_torso]
+const imagesToDisplay = [pandora_right, pandora_back_torso, pandora_back_three_quarters, pandora_back, pandora_full_three_quarters, pandora_head, pandora_left_full, pandora_left_torso]
 
 const sculptureDetails = [{
   link:"/works/sculpture/pandora",
@@ -41,7 +41,7 @@ export default function Pandora() {
         </div>
         <div className="pt-12 md:pt-0 md:px-8 md:mx-48">
           <CarouselComponent
-          imagesArray={imagesArray}
+          imagesToDisplay={imagesToDisplay}
           />
         </div>
         <div className="md:hidden text-base md:px-28 md:text-main mt-4 md:m-0 ">

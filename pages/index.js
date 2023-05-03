@@ -100,17 +100,17 @@ const Home = () => {
     //   style: 'skinny',
     //   width: '50%'
     // },
-    {
-      link:'/works/exhibitions/palazzo-installation',
-      src:classicalAlabasterBust,
-      alt: 'tk',
-      title: 'Woman, ',
-      details: '2013, Palermo,',
-      material: 'Plaster,',
-      size: '40  x 40 cm',
-      style: 'regular',
-      width: '100%'
-    }
+    // {
+    //   link:'/works/exhibitions/palazzo-installation',
+    //   src:classicalAlabasterBust,
+    //   alt: 'tk',
+    //   title: 'Woman, ',
+    //   details: '2013, Palermo,',
+    //   material: 'Plaster,',
+    //   size: '40  x 40 cm',
+    //   style: 'regular',
+    //   width: '100%'
+    // }
 
   ]
 

@@ -10,7 +10,7 @@ import sacrifice_full from '../../../public/sculpture/sacrifice/sacrifice_full.j
 import sacrifice_main_torso_three_quarters from '../../../public/sculpture/sacrifice/sacrifice_main_torso_three_quarters.jpg'
 import sacrifice_torso from '../../../public/sculpture/sacrifice/sacrifice_torso.jpg'
 
-const imagesArray = [sacrifice_back, sacrifice_full_three_quarters, sacrifice_full, sacrifice_main_torso_three_quarters, sacrifice_torso, sacrifice_back_torso]
+const imagesToDisplay = [sacrifice_back, sacrifice_full_three_quarters, sacrifice_full, sacrifice_main_torso_three_quarters, sacrifice_torso, sacrifice_back_torso]
 
 const sculptureDetails = [{
   link:"/works/sculpture/sacrifice",
@@ -39,7 +39,7 @@ export default function Sacrifice() {
         </div>
         <div className="pt-12 md:pt-0 md:px-8 md:mx-48">
           <CarouselComponent
-          imagesArray={imagesArray}
+          imagesToDisplay={imagesToDisplay}
           />
         </div>
         <div className="md:hidden text-base md:px-28 md:text-main mt-4 md:m-0 ">

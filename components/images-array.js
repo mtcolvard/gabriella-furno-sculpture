@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 
-const ImageArray = ( {imageObject }) => {
+const ImageArray = ( { imageObject }) => {
 const regular = {maxWidth: '100%'}
 const medium = {display: 'block', width: '66%', marginLeft: 'auto', marginRight: 'auto'}
 const skinny = {display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto'}
