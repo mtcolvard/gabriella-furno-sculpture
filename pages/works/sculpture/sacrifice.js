@@ -17,7 +17,7 @@ const sculptureDetails = [{
   src:sacrifice_main_torso_three_quarters,
   alt:"Sacrifice: a 186cm tall aluminium sculpture of a strong, beautiful woman with her hands outstretched",
   title: 'Sacrifice,',
-  details: '2013, Palermo,',
+  details: '2013, ',
   material: 'Cast Aluminum,',
   size: '186 x 186 cm'
 }]

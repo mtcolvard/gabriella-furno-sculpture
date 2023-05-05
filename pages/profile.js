@@ -8,12 +8,12 @@ export default function Profile() {
   return (
     <>
       <Navbar />
-      <div className="px-2.5 pt-12 md:px-8 md:pt-24 md:mx-48 leading-tight">
+      <div className="px-6 pt-12 md:px-8 md:pt-24 md:mx-48 ">
       <Image
         src={gabriellaPhotograph}
         alt="Photograph of the artist Gabriella Furno"
         height="500"
-      />
+          />
         <p className="mt-6 mb-6">Working on large forms is a necessity in itself. I think my drive or desire for creating these large works, connects me to a particular emotion hidden inside me; it’s an urge, a necessity, like feeling hungry.
         </p>
         <p className="mb-6">What is the meaning of where we come from? The space around us, the universe, feels like an empty place without answers. But the rhythm that we have every day is the fact that time passes whatever happens. The empty space contrasts to the speed surrounding us. This particular tension is the search for movement in forms. Sculpture gives the emotion of anxiety about what is really happening around us.

@@ -16,7 +16,7 @@ const sculptureDetails = [{
   src:infinity_back_three_quarters,
   alt:"Infinity: a 218 cm tall aluminium sculpture of a Nigerian man crouching with hands outstretched",
   title: 'Infinity, ',
-  details: '2014, Palermo,',
+  details: '2014, ',
   material: 'Cast Aluminum,',
   size: '218 x 200 cm'
 }

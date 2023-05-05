@@ -19,7 +19,7 @@ const sculptureDetails = [{
   src:pandora_back_three_quarters,
   alt:"Pandora: a 230 cm tall cast aluminium sculpture of a beautiful African woman, contrapposto with hands framing her head",
   title: 'Pandora, ',
-  details: '2013, Palermo,',
+  details: '2013, ',
   material: 'Cast Aluminum,',
   size: '123 x 230 cm'
 }]
